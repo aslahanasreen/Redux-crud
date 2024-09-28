@@ -31,6 +31,7 @@ function Add() {
       })
 
       handleClose()
+      toast.success("Post Added Successfully!!")
       }
       
     }
