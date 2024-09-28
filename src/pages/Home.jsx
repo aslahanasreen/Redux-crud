@@ -25,7 +25,7 @@ function Home() {
     const handleShow = (data) => {
         setShow(true);
         setEdit({
-            id: data.id, title: data.title, body: data.body, reactions: { likes: data.likes, dislikes: data.dislikes }
+            id: data.id, title: data.title, body: data.body, reactions: { likes: data.reactions.likes, dislikes: data.reactions.dislikes }
         })
     }
 
