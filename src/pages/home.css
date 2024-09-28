@@ -1,0 +1,9 @@
+.custom-dropdown::after{
+    display: none
+}
+
+.custom-dropdown{
+    background-color: transparent;
+    color: inherit;
+    border: 1px solid white;
+}
