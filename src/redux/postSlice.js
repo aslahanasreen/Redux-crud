@@ -24,9 +24,8 @@ const postSlice = createSlice({
         },
         addDislike(state,action){
             const existing = state.posts.find((item)=>item.id==action.payload)
-            if(existing.reactions.dislikes>0){
-                existing.reactions.dislikes-=1
-            }
+            existing.reactions.dislikes+=1
+
         },
         deletePost(state,action){
             state.posts=state.posts.filter((item)=>item.id!=action.payload)
